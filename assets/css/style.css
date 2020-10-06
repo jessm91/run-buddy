@@ -334,15 +334,28 @@ margin: 5px 0 15px 0;
 /* REACH OUT STYLES END */
 
 .service-grid-container {
+    max-width: 940px;
+    margin: 0 auto;
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 10px;
 }
 
 .service-grid-item {
-    width: 200px;
-    height: 50px;
     background-color: orange;
     border: solid;
     color: black;
+    padding: 1em;
+}
+
+.box1 {
+}
+
+.box2 {
+}
+
+.box3{
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
