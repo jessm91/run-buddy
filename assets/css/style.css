@@ -341,6 +341,7 @@ margin: 5px 0 15px 0;
     padding: 15px;
     align-items: flex-end;
     position: relative;
+    overflow: hidden;
 }
 
 .trainer-img::after {
@@ -351,6 +352,12 @@ margin: 5px 0 15px 0;
     position: absolute;
     top: 0;
     left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.trainer:hover .trainer-img::after {
+    opacity: 1;
 }
 
 .trainer-img h3 {
@@ -358,12 +365,21 @@ margin: 5px 0 15px 0;
     z-index: 300;
     margin-bottom: 5px;
     font-size: 28px;
+    top: 200px;
+    transition: 0.6s;
 }
 
 .trainer-img h4 {
     position: relative;
     z-index: 300;
     font-size: 22px;
+    top: 200px;
+    transition: 0.6s;
+    transition-delay: 150ms;
+}
+
+.trainer:hover .trainer-img h3, .trainer:hover .trainer-img h4 {
+    top: 0px;
 }
 
 .trainer-bio {
