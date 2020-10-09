@@ -1,4 +1,6 @@
 .hero {
+    background-image: url('../images/hero-bg.jpg');
+    background-size: cover;
     background-position: bottom;
     height: auto;
     text-align: center;
@@ -12,6 +14,7 @@
     padding: 0 80px 15px 80px;
     font-weight: normal;
     font-size: 42px;
+    font-weight: 400;
     font-style: italic;
 }
 
@@ -37,6 +40,6 @@
 }
 
 .secondary-content li {
-    color: #39a6b2;
     margin: 10px 0;
+    color: #39a6b2;
 }
